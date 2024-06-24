@@ -1,0 +1,17 @@
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a.sidebar-link {
+    color: #FFF;
+    display: block;
+    white-space: nowrap;
+}
+
+.sidebar-item{
+    position: relative;
+}

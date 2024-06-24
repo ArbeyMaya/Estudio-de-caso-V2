@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- lineicons -->
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <title>Bases de datos NoSQL</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bases de datos | Bases de datos relacionales</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">SytemAdmin</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-success" type="submit">Buscar</button>
+                            </form>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/Inicio/inicio-v2.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Usuarios
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Registrar</a></li>
+                                    <li><a class="dropdown-item" href="#">Actualizar</a></li>
+                                    <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Clientes
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Actualizar</a></li>
+                                    <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorias
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Listar</a></li>
+                                    <li><a class="dropdown-item" href="#">registrar</a></li>
+                                    <li><a class="dropdown-item" href="#">Actualizar</a></li>
+                                    <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Listar</a></li>
+                                    <li><a class="dropdown-item" href="#">registrar</a></li>
+                                    <li><a class="dropdown-item" href="#">Actualizar</a></li>
+                                    <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pedidos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Mostrar Todo</a></li>
+                                    <li><a class="dropdown-item" href="#">Estado</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Bases de datos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="/nosql/nosql.html">Base de datos relacionales</a></li>
+                                    <li><a class="dropdown-item" href="/nosql/base-de-datos-nosql/bdtnsql.html">Base de datos NoSQL</a></li>
+                                    <li><a class="dropdown-item" href="base-de-datos-nosql/bdtoo/bd-orientado-a-objetos.html">Base de datos orientado a objetos</a></li>
+                                    <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Configuración</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Cerrar Sesión</a>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1 class="text-center pt-5">BASE DE DATOS RELACIONALES</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <img src="img/nosql-principal.png" class="img-fluid" alt="Centered Image">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="pt-5">¿Ques son las bases de datos relacionales?</h3>
+            <p class="text-left pt-3">
+                Una base de datos relacional es un tipo de base de datos que cumple con el modelo relacional. Esto significa que almacena y proporciona 
+                acceso a puntos de datos que están relacionados entre sí. En lugar de jerarquizar la información, el modelo relacional presenta los datos 
+                de manera intuitiva y directa. Estas bases de datos fueron postuladas por primera vez en 1970 por Edgar Frank Codd y, desde entonces, se 
+                han convertido en el modelo más utilizado.
+            </p>
+        </div>
+        <div class="container">
+            <h3 class="pt-5">Caracteristicas principales</h3>
+            <p class="text-left pt-3">
+                Las bases de datos relacionales, desde su concepción, han sido diseñadas para ofrecer una estructura organizada y coherente para el 
+                almacenamiento de datos. A continuación, se detallan sus características más sobresalientes:
+            </p>
+        </div>
+        <div class="container">
+            <h5 class="text-left pt-2">1. Estructura Tabular:</h5>
+            <ul>
+                <li class="pt-2"><strong>Tablas: </strong>Son la esencia de una base de datos relacional. Cada tabla representa una entidad y almacena datos relacionados con esa entidad.</li>
+                <li class="pt-5"><strong>Filas y colummnas: </strong>Las tablas están compuestas por filas, que representan registros individuales, y columnas, que representan los atributos de esos registros.</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h5 class="text-left pt-5">2. Claves Primarias:</h5>
+            <p class="text-left pt-2">Cada fila en una tabla tiene un identificador único llamado clave primaria. Esta clave garantiza que cada registro en la tabla sea único y permite realizar búsquedas y relaciones de manera eficiente.</p>
+        </div>
+        <div class="container">
+            <h5 class="text-left pt-5">3. Claves Externas:</h5>
+            <p class="text-left pt-2">Son campos en una tabla que hacen referencia a la clave primaria de otra tabla. Estas claves establecen relaciones entre las tablas y permiten que los datos se interrelacionen de manera coherente.</p>
+        </div>
+        <div class="container">
+            <h5 class="text-left pt-5">4. Integridad Referencial:</h5>
+            <p class="text-left pt-2">Es una de las características más cruciales de las bases de datos relacionales. Garantiza que las relaciones entre las tablas se mantengan consistentes. Por ejemplo, si se tiene una clave externa en una tabla que hace referencia a una clave primaria en otra, la integridad referencial asegura que esta relación siempre sea válida.</p>
+        </div>
+        <div class="container">
+            <h5 class="text-left pt-5">5. Normalización:</h5>
+            <p class="text-left pt-2">Es un proceso mediante el cual se organizan los datos en la base de datos para reducir la redundancia y mejorar la integridad de los datos. Esto se logra dividiendo las tablas más grandes en tablas más pequeñas y estableciendo relaciones entre ellas.</p>
+        </div>
+        <div class="container">
+            <h5 class="text-left pt-5">6. Transacciones ACID:</h5>
+            <p class="text-left pt-2">Las bases de datos relacionales ofrecen propiedades ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad). Esto significa que las operaciones (como agregar, actualizar o eliminar registros) se realizan de manera completa o no se realizan en absoluto, garantizando la integridad de los datos.</p>
+        </div>
+        <div class="container">
+            <h5 class="text-left pt-5">7. Consultas SQL:</h5>
+            <p class="text-left pt-2">SQL (Structured Query Language) es el lenguaje estándar utilizado para consultar y manipular datos en una base de datos relacional. Permite realizar operaciones complejas y recuperar datos de múltiples tablas de manera eficiente.
+
+            </p>
+        </div>
+        <div class="container">
+            <h5 class="text-left pt-5">8. Seguridad:</h5>
+            <p class="text-left pt-2">Las bases de datos relacionales ofrecen mecanismos de seguridad robustos, como el control de acceso basado en roles y la encriptación de datos, para proteger la información almacenada.</p>
+        </div>
+        <div class="container">
+            <h3 class="pt-5">¿Cómo Funcionan las Bases de Datos Relacionales?</h3>
+            <p class="text-left pt-3">Las bases de datos relacionales son sistemas complejos y sofisticados que permiten almacenar, recuperar y manipular datos de manera eficiente. Su funcionamiento se basa en una serie de principios y estructuras que vamos a detallar a continuación:</p>
+            <ul>
+                <li class="pt-2"><strong>Estructura de tablas: </strong>El corazón de una base de datos relacional son sus tablas. Cada tabla representa un conjunto específico de datos y está compuesta por filas y columnas. Las filas, también conocidas como registros, contienen información específica sobre una entidad, mientras que las columnas, o campos, representan los diferentes atributos de esa entidad.</li>
+                <li class="pt-5"><strong>Claves Primarias y Ajenas: </strong>Cada fila en una tabla tiene un identificador único llamado clave primaria. Esta clave garantiza que cada registro en la tabla sea único y fácilmente identificable. Por otro lado, las claves ajenas son campos en una tabla que hacen referencia a la clave primaria de otra tabla. Estas claves establecen relaciones entre las tablas y permiten que los datos se interrelacionen de manera coherente.</li>
+                <li class="pt-5"><strong>Relaciones entre Tablas: </strong>Las relaciones son esenciales en bases de datos relacionales. Estas determinan cómo las tablas se conectan entre sí. Por ejemplo, en una empresa que proporciona una tablet a cada empleado, habrá una tabla «Empleados» y otra «Tablets». La tabla «Empleados» podría tener campos como ID_empleado, nombre, puesto, etc., mientras que la tabla «Tablets» podría tener campos como ID_tablet, marca, modelo, ID_empleado_asignado, etc. El campo ID_empleado_asignado en la tabla «Tablets» sería una clave ajena que hace referencia al ID_empleado en la tabla «Empleados». Esta relación permite saber qué tablet está asignada a qué empleado.</li>
+                <li class="pt-5"><strong>Consultas y Manipulación de Datos: </strong>Para interactuar con la base de datos, se utiliza un lenguaje especializado llamado SQL (Structured Query Language). A través de SQL, los usuarios pueden realizar consultas para recuperar datos específicos, insertar nuevos registros, actualizar datos existentes y eliminar registros. Las consultas pueden ser simples, como recuperar todos los empleados de un departamento específico, o complejas, involucrando múltiples tablas y condiciones.</li>
+                <li class="pt-5"><strong>Integridad de Datos: </strong>Uno de los principales objetivos de una base de datos relacional es garantizar la integridad de los datos. Esto significa que los datos deben ser precisos, coherentes y válidos en todo momento. Las reglas de integridad referencial aseguran que las relaciones entre las tablas se mantengan y que no se introduzcan datos inconsistentes o inválidos.</li>
+                <li class="pt-5"><strong>Sistemas de Gestión de Bases de Datos Relacionales (RDBMS): </strong>Para administrar y operar una base de datos relacional, se utiliza un software específico llamado RDBMS (Relational Database Management System). Este software proporciona herramientas para crear, modificar y consultar la base de datos, garantizando al mismo tiempo la seguridad, integridad y rendimiento de los datos.</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h3 class="pt-5">Desventanjas</h3>
+            <ul>
+                <li class="pt-2"><strong>Datos Gráficos y Multimedia: </strong>No son óptimas para manejar tipos de datos complejos como gráficos, multimedia o CAD, debido a su estructura tabular limitada.</li>
+                <li class="pt-5"><strong>Jerarquía y Flexibilidad: </strong>Carecen de la flexibilidad para gestionar estructuras de datos jerárquicas o altamente interconectadas con eficiencia, lo que puede ser un obstáculo en ciertas aplicaciones.</li>
+                <li class="pt-5"><strong>Rendimiento en Grandes Volumenes: </strong>La segmentación de datos en diferentes tablas y la necesidad de unir estas tablas para consultas complejas pueden afectar el rendimiento, especialmente en bases de datos muy grandes.</li>
+                <li class="pt-5"><strong>Escalabilidad y Manejo de Grandes Flujos de Datos: </strong>Pueden presentar desafíos en términos de escalabilidad horizontal y manejo de grandes flujos de datos en tiempo real, a diferencia de las bases de datos NoSQL.</li>
+                <li class="pt-5"><strong>Complejidad de Consultas Avanzadas: </strong>Las consultas complejas, especialmente aquellas que implican múltiples uniones y subconsultas, pueden ser difíciles de escribir y optimizar.</li>
+            </ul>
+        </div>
+        <footer class="pt-5">
+            © 2023, Pontia tech. Todos los derechos reservados.
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
